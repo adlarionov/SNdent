@@ -348,7 +348,7 @@ header {
 
 .gallery {
   padding-top: 57px;
-  padding-bottom: 90px;
+  padding-bottom: 57px;
 }
 .gallery .gallery-title {
   margin-bottom: 50px;
@@ -357,6 +357,61 @@ header {
   display: grid;
   gap: 57px 24px;
   grid-template-columns: repeat(3, 1fr);
+}
+.gallery .gallery-item {
+  width: 384px;
+  height: 374px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news {
+  padding-top: 57px;
+  padding-bottom: 90px;
+}
+.news .news-title {
+  margin-bottom: 50px;
+}
+.news .news-content {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.news .news-item {
+  max-width: 384px;
+  max-height: 516px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.news .news-photo {
+  width: 384px;
+  height: 168px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news .news-item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news .news-item-text {
+  max-width: 384px;
+  max-height: 130px;
+  overflow: hidden;
+}
+.news .news-link {
+  padding: 16px 46px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .footer {
@@ -442,6 +497,16 @@ header {
   .gallery .gallery-content {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery .gallery-item {
+    width: 384px;
+    height: 374px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .news .news-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 0px) and (max-width: 991px) {
   .photo {
@@ -518,9 +583,19 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .news .news-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .gallery .gallery-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery .gallery-item {
+    width: 384px;
+    height: 374px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -552,6 +627,16 @@ header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 0 24px;
+  }
+  .gallery .gallery-item {
+    width: 384px;
+    height: 374px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .news .news-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
   .footer .footer-text {
     margin-left: 48px;
@@ -606,6 +691,16 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
   .gallery .gallery-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery .gallery-item {
+    width: 384px;
+    height: 374px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .news .news-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
